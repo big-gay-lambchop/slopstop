@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>DEADLOCK</title>
+        <link rel="stylesheet" href="/DEADLOCK/style.css">
+    </head>
+    <body>
+        <script>
+            document.onkeydown = function (e) { 
+                var path = window.location.pathname;
+                var page = path.split("/").pop();
+                
+                let prev = (parseInt(page) - 1).toString() + ".html";
+                let next = (parseInt(page) + 1).toString() + ".html";
+
+                e = e || window.event; 
+                var charCode = (e.charCode) ? e.charCode : e.keyCode;
+            
+                if (charCode == 37) {
+                    location.replace(prev)
+                }
+                else if (charCode == 39) {
+                    location.replace(next)
+                }
+            };
+        </script>
+        
+        <h1>
+            DEADLOCK
+        </h1>
+        <h2 class="ribbon">
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/index.html">HOME</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/DEADLOCK/index.html">PAGES</a>
+        </h2>
+
+        <p class="date" style="text-align: center;">
+            Ah crap.
+        </p>
+        
+        <p class="post">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/13.png" alt="">
+            <span style="text-align: center; display: block;">
+                Father is home.
+            </span>
+        </p>
+
+        <div class="post">
+            <input class="dialoglogButton" value="Show Scapelog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Scapelog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Scapelog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:20 PM</div>
+                    </div>
+                    <div class="messageTo">bad news</div>
+                    <div class="messageTo">hes home</div>
+                    <div class="messageTo">and hes right outside my door</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:21 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Shit</div>
+                    <div class="messageFrom">Well could you come to the scrapyard at least</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:21 PM</div>
+                    </div>
+                    <div class="messageTo">idk</div>
+                    <div class="messageTo">ill try</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:22 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Wait no your dad is a freak</div>
+                    <div class="messageFrom">Thats fucking creepy</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:22 PM</div>
+                    </div>
+                    <div class="messageTo">idk he just kinda</div>
+                    <div class="messageTo">does that</div>
+                    <div class="messageTo">soemtimes not all the time tho</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:24 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Dude it doesnt matter if its sometimes or all the time just a couple times is enough to make him a FREAK</div>
+                    <div class="messageFrom">Its not normal</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="postFoot">
+            <input 
+                class="pageButton" 
+                value="<"
+                style="display: flex; margin-right: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let prev = (parseInt(page) - 1).toString() + '.html';
+
+                    location.replace(prev)
+                " 
+                type="button" 
+            />
+
+            <input 
+                class="pageButton" 
+                value=">"
+                style="display: block; margin-left: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let next = (parseInt(page) + 1).toString() + '.html';
+
+                    location.replace(next)
+                " 
+                type="button" 
+            />
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>DEADLOCK</title>
+        <link rel="stylesheet" href="/DEADLOCK/style.css">
+    </head>
+    <body>
+        <script>
+            document.onkeydown = function (e) { 
+                var path = window.location.pathname;
+                var page = path.split("/").pop();
+                
+                let prev = (parseInt(page) - 1).toString() + ".html";
+                let next = (parseInt(page) + 1).toString() + ".html";
+
+                e = e || window.event; 
+                var charCode = (e.charCode) ? e.charCode : e.keyCode;
+            
+                if (charCode == 37) {
+                    location.replace(prev)
+                }
+                else if (charCode == 39) {
+                    location.replace(next)
+                }
+            };
+        </script>
+        
+        <h1>
+            DEADLOCK
+        </h1>
+        <h2 class="ribbon">
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/index.html">HOME</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/DEADLOCK/index.html">PAGES</a>
+        </h2>
+
+        <p class="date" style="text-align: center;">
+            Eat the floor pizza like a wild animal.
+        </p>
+        
+        <p class="post">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/5a.png" alt="">
+        </p>
+        <div class="post">
+            <input class="dialoglogButton" value="Show Dialoglog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Dialoglog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Dialoglog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+                <div style="color: #ff9100;">LUKE: i fucking love pizza</div>
+            </div>
+        </div>
+        <p class="post">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/5b.png" alt="">
+        </p>
+
+        <div class="postFoot">
+            <input 
+                class="pageButton" 
+                value="<"
+                style="display: flex; margin-right: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let prev = (parseInt(page) - 1).toString() + '.html';
+
+                    location.replace(prev)
+                " 
+                type="button" 
+            />
+
+            <input 
+                class="pageButton" 
+                value="Admire meisterwerk. >"
+                style="display: block; margin-left: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let next = (parseInt(page) + 1).toString() + '.html';
+
+                    location.replace(next)
+                " 
+                type="button" 
+            />
+        </div>
+
+    </body>
+</html>

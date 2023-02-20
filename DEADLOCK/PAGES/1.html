@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>DEADLOCK</title>
+        <link rel="stylesheet" href="/DEADLOCK/style.css">
+    </head>
+    <body>
+        <script>
+            document.onkeydown = function (e) { 
+                var path = window.location.pathname;
+                var page = path.split("/").pop();
+                
+                let next = (parseInt(page) + 1).toString() + ".html";
+
+                e = e || window.event; 
+                var charCode = (e.charCode) ? e.charCode : e.keyCode;
+
+                if (charCode == 39) {
+                    location.replace(next)
+                }
+            };
+        </script>
+        
+        <h1>
+            DEADLOCK
+        </h1>
+        <h2 class="ribbon">
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/index.html">HOME</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/DEADLOCK/index.html">PAGES</a>
+        </h2>
+
+        <p class="date" style="text-align: center;">
+            DEADLOCK
+        </p>
+        
+        <p class="post">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/1.gif" alt="">
+            <span style="text-align: center; display: block;">
+                A sweaty hooligan stands utterly alone in his den of filth. It just so happens that today is completely unremarkable.
+                <br>
+                <br>
+                His name is Luke. He's a no good, dirty rotten stinker that sits around and does nothing. Zip. Nada. Zilch.
+                <br>
+                <br>
+                UNTIL TODAY! UP AND AT 'EM BOY! DAYS A-WASTIN'!
+            </span>
+        </p>
+
+        <div class="postFoot">
+            <input 
+                class="pageButton" 
+                value="Explore your sicknasty man cave. >"
+                style="display: block; margin-left: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let next = (parseInt(page) + 1).toString() + '.html';
+
+                    location.replace(next)
+                " 
+                type="button" 
+            />
+        </div>
+
+    </body>
+</html>

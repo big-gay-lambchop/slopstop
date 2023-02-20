@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>lambchop's slop shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <script>
+            document.onkeydown = function (e) { 
+                e = e || window.event; 
+                var charCode = (e.charCode) ? e.charCode : e.keyCode;
+            
+                if (charCode == 37) {
+                    location.replace("index.html")
+                }
+                else if (charCode == 39) {
+                    location.replace("about.html")
+                }
+            };
+        </script>
+
+        <h1>
+            LAMBCHOP'S SLOP SHOP
+        </h1>
+        <h2 class="ribbon">
+            <a style="margin-right: 32px; text-decoration: none; color: #fa5e82;" href="index.html">HOME</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FFFFFF;" href="store.html">SHOP</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #fa5e82;" href="about.html">ABOUT</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000; font-family: 'Courier New', Courier, monospace;" href="DEADLOCK/index.html">DEADLOCK</a>
+        </h2>
+        <p class="post">
+            i dont got any merch or commission info here yet sry
+        </p>
+    </body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>DEADLOCK</title>
+        <link rel="stylesheet" href="/DEADLOCK/style.css">
+    </head>
+    <body>
+        <script>
+            document.onkeydown = function (e) { 
+                var path = window.location.pathname;
+                var page = path.split("/").pop();
+                
+                let prev = (parseInt(page) - 1).toString() + ".html";
+                let next = (parseInt(page) + 1).toString() + ".html";
+
+                e = e || window.event; 
+                var charCode = (e.charCode) ? e.charCode : e.keyCode;
+            
+                if (charCode == 37) {
+                    location.replace(prev)
+                }
+                else if (charCode == 39) {
+                    location.replace(next)
+                }
+            };
+        </script>
+        
+        <h1>
+            DEADLOCK
+        </h1>
+        <h2 class="ribbon">
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/index.html">HOME</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/DEADLOCK/index.html">PAGES</a>
+        </h2>
+
+        <!--
+        <audio autoplay loop>
+            <source src="https://gitlab.com/lambchop/deadlock/-/raw/main/AUD/smokeonthewaterbutawesome.mp3" type="audio/mpeg">
+        </audio> 
+        -->
+        
+        <p class="post">
+            <img style="width: 100%; display: flex; margin: 0 auto;" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/1.gif" alt="">
+            <span style="text-align: center; display: block;">how did you get here!!! this is my test page !!! wtf!!<br>this isnt allowed!!</span>
+        </p>
+
+        <div class="post">
+            <input class="dialoglogButton" value="Show Scapelog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Scapelog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Scapelog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:12 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Yo what you up to im bored as shit</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:13 PM</div>
+                    </div>
+                    <div class="messageTo">uh im just vhillong in my room whaddup</div>
+                    <div class="messageTo">chiling</div>
+                    <div class="messageTo">chilling</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:13 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Do you wanna come over to my place or break shit in the scrapyard</div>
+                    <div class="messageFrom">Actually preferably the scrapyard my dad's gf is here and I dont want to be anywhere near her</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:13 PM</div>
+                    </div>
+                    <div class="messageTo">you could come here if u want</div>
+                    <div class="messageTo">my pa is home tho</div>
+                    <div class="messageTo">u can probobly come thru the window r smth</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:15 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">I guess</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:20 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Are you going to fix that</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:20 PM</div>
+                    </div>
+                    <div class="messageTo">fix what</div>
+                </div>
+                
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:27 PM</div>
+                    </div>
+                    <div class="messageTo">?</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:28 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Its 'probably' dumbass</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:29 PM</div>
+                    </div>
+                    <div class="messageTo">oh sry</div>
+                    <div class="messageTo">how do i edit message</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:30 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Forget it</div>
+                    <div class="messageFrom">Ill see you in about an hour</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <input class="dialoglogButton" value="Show Scapelog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Scapelog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Scapelog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+
+                <div style="color: #ff0000;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:56 PM</div>
+                        <div class="username" style="font-size: 16px;">CRUISE</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/calpfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">hey man did you check the news at all today?</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:00 PM</div>
+                    </div>
+                    <div class="messageTo">no</div>
+                    <div class="messageTo">y</div>
+                </div>
+
+                <div style="color: #ff0000;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:01 PM</div>
+                        <div class="username" style="font-size: 16px;">CRUISE</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/calpfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">big hunka chunka junk crashed into the slums this morning they told everyone its off limits</div>
+                    <div class="messageFrom">im getting the heebie jeebies rn thinking about it because the last time this happened everyone got the yrovian flu</div>
+                    <div class="messageFrom">what if it happens again</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:01 PM</div>
+                    </div>
+                    <div class="messageTo">dw its probobly ok</div>
+                    <div class="messageTo">probably</div>
+                </div>
+
+                <div style="color: #ff0000;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:01 PM</div>
+                        <div class="username" style="font-size: 16px;">CRUISE</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/calpfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">why would they be insisting people stay away if it was ok</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:02 PM</div>
+                    </div>
+                    <div class="messageTo">idk</div>
+                    <div class="messageTo">do u wanna hang w me and gacy hes coming over</div>
+                </div>
+
+                <div style="color: #ff0000;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:03 PM</div>
+                        <div class="username" style="font-size: 16px;">CRUISE</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/calpfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">not today i got a lot of shit to do but tell him i said hi</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:03 PM</div>
+                    </div>
+                    <div class="messageTo">o ok</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <input class="dialoglogButton" value="Show Scapelog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Scapelog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Scapelog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:30 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Forget it</div>
+                    <div class="messageFrom">Ill see you in about an hour</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:05 PM</div>
+                    </div>
+                    <div class="messageTo">gacy my brother says hi</div>
+                    <div class="messageTo">also hes talking abt something fallung into the slums</div>
+                    <div class="messageTo">smth to consider</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">2:06 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="https://gitlab.com/lambchop/deadlock/-/raw/main/IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Oh I already know but thanks</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--
+        <div class="post">
+            <input class="dialoglogButton" value="Show Dialoglog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Dialoglog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Dialoglog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+                <div style="color: #ff9100;">luke: uh oh</div>
+            </div>
+        </div>
+        -->
+        <div class="postFoot">
+            <input 
+                class="pageButton" 
+                value="<"
+                style="display: flex; margin-right: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let prev = (parseInt(page) - 1).toString() + '.html';
+
+                    location.replace(prev)
+                " 
+                type="button" 
+            />
+
+            <input 
+                class="pageButton" 
+                value=">"
+                style="display: block; margin-left: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let next = (parseInt(page) + 1).toString() + '.html';
+
+                    location.replace(next)
+                " 
+                type="button" 
+            />
+        </div>
+    </body>
+</html>
