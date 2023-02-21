@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>DEADLOCK</title>
+        <link rel="stylesheet" href="/slopstop/DEADLOCK/style.css">
+    </head>
+    <body>
+        <h1>
+            DEADLOCK
+        </h1>
+        <h2 class="ribbon">
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/slopstop/">HOME</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/slopstop/DEADLOCK/">PAGES</a>
+        </h2>
+
+        <script>
+            document.onkeydown = function (e) { 
+                var path = window.location.pathname;
+                var page = path.split("/").pop();
+                
+                let prev = (parseInt(page) - 1).toString() + ".html";
+                let next = (parseInt(page) + 1).toString() + ".html";
+
+                e = e || window.event; 
+                var charCode = (e.charCode) ? e.charCode : e.keyCode;
+            
+                if (charCode == 37) {
+                    location.replace(prev)
+                }
+                else if (charCode == 39) {
+                    location.replace(next)
+                }
+            };
+        </script>
+
+        <audio autoplay>
+            <source src="AUD/win.mp3" type="audio/mpeg">
+        </audio> 
+
+        <p class="date" style="text-align: center;">
+            !!!
+        </p>
+        
+        <p class="post">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/15.png" alt="">
+        </p>
+
+        <div class="postFoot">
+            <input 
+                class="pageButton" 
+                value="<"
+                style="display: flex; margin-right: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let prev = (parseInt(page) - 1).toString() + '.html';
+
+                    location.replace(prev)
+                " 
+                type="button" 
+            />
+
+            <input 
+                class="pageButton" 
+                value="Arm yourself. >"
+                style="display: block; margin-left: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let next = (parseInt(page) + 1).toString() + '.html';
+
+                    location.replace(next)
+                " 
+                type="button" 
+            />
+        </div>
+    </body>
+</html>

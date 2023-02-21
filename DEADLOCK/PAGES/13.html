@@ -29,6 +29,9 @@
                 if (charCode == 37) {
                     location.replace(prev)
                 }
+                else if (charCode == 39) {
+                    location.replace(next)
+                }
             };
         </script>
 
@@ -123,6 +126,21 @@
                     let prev = (parseInt(page) - 1).toString() + '.html';
 
                     location.replace(prev)
+                " 
+                type="button" 
+            />
+
+            <input 
+                class="pageButton" 
+                value="Look for a distraction! >"
+                style="display: block; margin-left: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let next = (parseInt(page) + 1).toString() + '.html';
+
+                    location.replace(next)
                 " 
                 type="button" 
             />
