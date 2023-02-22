@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>DEADLOCK</title>
+        <link rel="stylesheet" href="/slopstop/DEADLOCK/style.css">
+    </head>
+    <body>
+        <h1>
+            DEADLOCK
+        </h1>
+        <h2 class="ribbon">
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/slopstop/">HOME</a>
+            <a style="margin-right: 32px; text-decoration: none; color: #FF0000;" href="/slopstop/DEADLOCK/">PAGES</a>
+        </h2>
+
+        <script>
+            document.onkeydown = function (e) { 
+                var path = window.location.pathname;
+                var page = path.split("/").pop();
+                
+                let prev = (parseInt(page) - 1).toString() + ".html";
+                let next = (parseInt(page) + 1).toString() + ".html";
+
+                e = e || window.event; 
+                var charCode = (e.charCode) ? e.charCode : e.keyCode;
+            
+                if (charCode == 37) {
+                    location.replace(prev)
+                }
+                else if (charCode == 39) {
+                    location.replace(next)
+                }
+            };
+        </script>
+
+        <p class="date" style="text-align: center;">
+            ...
+        </p>
+        
+        <p class="post">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/20.png" alt="">
+            <span style="display: block; text-align: center;">Wow! with nothing but a rank undergarment, our brave young knight has slain the mighty beast.<br><br>...<br><br>...Whats on those that makes them so potently pungent? When was the last time this was washed? Disgusting.</span>
+        </p>
+
+        <div class="post">
+            <input class="dialoglogButton" value="Show Scapelog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Scapelog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Scapelog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:32 PM</div>
+                    </div>
+                    <div class="messageTo">i did it</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:32 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">You snuck out or what</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:33 PM</div>
+                    </div>
+                    <div class="messageTo">uh</div>
+                    <div class="messageTo">knockef him out cold w my slick moves</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:35 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">YOU KNOCKED HIM OUT</div>
+                    <div class="messageFrom">YOU KNOCKED YOUR FATHER OUT</div>
+                    <div class="messageFrom">WITH YOUR SLICK MOVES</div>
+                    <div class="messageFrom">WHAT THE FUCK DO YOU MEAN</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:36 PM</div>
+                    </div>
+                    <div class="messageTo">i didn punch him or anythgin like that</div>
+                    <div class="messageTo">i gave him a lethal dose of my ladykiller pheromones</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:36 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">WHAT THE FUCK IS WRONG WITH YOU PEOPLE</div>
+                    <div class="messageFrom">NONE OF YOU ARE RIGHT IN THE HEAD</div>
+                    <div class="messageFrom">NOTHING YOU SAY MAKES ANY SENSE</div>
+                    <div class="messageFrom">HOLY SHIT</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:37 PM</div>
+                    </div>
+                    <div class="messageTo">dude cal, down i just thrw my briefs at him</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:37 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">You threw your 'ladykiller pheromones' at your FATHER</div>
+                    <div class="messageFrom">And</div>
+                    <div class="messageFrom">It 'knockef him out cold'</div>
+                    <div class="messageFrom">Im so glad I dont have a fucking nose is that why Kyle fucking hates you so much</div>
+                    <div class="messageFrom">Stinky ass bitch take a shower</div>
+                </div>
+
+                <div style="color: #ff9100;">
+                    <div class="scapeCli">
+                        <img class="pfpCli" src="IMG/lukepfp.png" alt=""> 
+                        <div class="username" style="font-size: 16px;">nacho mama</div>
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:37 PM</div>
+                    </div>
+                    <div class="messageTo">i feel rly bullied rn</div>
+                </div>
+
+                <div style="color: #7f66da;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:37 PM</div>
+                        <div class="username" style="font-size: 16px;">Gacy Bryant</div>
+                        <img class="pfpSer" src="IMG/gacypfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">Good</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="postFoot">
+            <input 
+                class="pageButton" 
+                value="<"
+                style="display: flex; margin-right: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let prev = (parseInt(page) - 1).toString() + '.html';
+
+                    location.replace(prev)
+                " 
+                type="button" 
+            />
+
+            <input 
+                class="pageButton" 
+                value="Climb out the window. >"
+                style="display: block; margin-left: auto;"
+                onclick="
+                    var path = window.location.pathname;
+                    var page = path.split('/').pop();
+                    
+                    let next = (parseInt(page) + 1).toString() + '.html';
+
+                    location.replace(next)
+                " 
+                type="button" 
+            />
+        </div>
+    </body>
+</html>

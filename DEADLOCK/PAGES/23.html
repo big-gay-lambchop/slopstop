@@ -21,7 +21,6 @@
                 var page = path.split("/").pop();
                 
                 let prev = (parseInt(page) - 1).toString() + ".html";
-                let next = (parseInt(page) + 1).toString() + ".html";
 
                 e = e || window.event; 
                 var charCode = (e.charCode) ? e.charCode : e.keyCode;
@@ -29,22 +28,38 @@
                 if (charCode == 37) {
                     location.replace(prev)
                 }
-                else if (charCode == 39) {
-                    location.replace(next)
-                }
             };
         </script>
 
-        <audio autoplay>
-            <source src="AUD/win.mp3" type="audio/mpeg">
-        </audio> 
-
         <p class="date" style="text-align: center;">
-            !!!
+            CLIMB OUT THE WINDOW?
         </p>
         
         <p class="post">
-            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/15.png" alt="">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/23.gif" alt="">
+        </p>
+
+        
+        <div class="post">
+            <input class="dialoglogButton" value="Show Scapelog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Scapelog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Scapelog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+
+                <div style="color: #ff0000;">
+                    <div class="scapeSer">
+                        <div class="username" style="font-size: 12px; vertical-align: middle;">1:56 PM</div>
+                        <div class="username" style="font-size: 16px;">CRUISE</div>
+                        <img class="pfpSer" src="calpfp.png" alt=""> 
+                    </div>
+                    <div class="messageFrom">i heard a window break downstairs. where are you?</div>
+                    <div class="messageFrom">hey</div>
+                    <div class="messageFrom">shithead answer me</div>
+                    <div class="messageFrom">god damn it</div>
+                </div>
+            </div>
+        </div>
+
+        <p class="post">
+            <span style="display: block; text-align: center;">Looks like our young master of the martial arts is currently indisposed and unresponsive.</span>
         </p>
 
         <div class="postFoot">
@@ -59,21 +74,6 @@
                     let prev = (parseInt(page) - 1).toString() + '.html';
 
                     location.replace(prev)
-                " 
-                type="button" 
-            />
-
-            <input 
-                class="pageButton" 
-                value="Take up arms. >"
-                style="display: block; margin-left: auto;"
-                onclick="
-                    var path = window.location.pathname;
-                    var page = path.split('/').pop();
-                    
-                    let next = (parseInt(page) + 1).toString() + '.html';
-
-                    location.replace(next)
                 " 
                 type="button" 
             />
