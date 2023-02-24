@@ -27,7 +27,7 @@ h2 {
     font-weight: bold;
     background-color: #b9b9b9;
     border: 16px solid #b9b9b9;
-    width: 50%;
+    width: 650px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -92,7 +92,7 @@ p {
     font-weight: bold;
     background-color: #b9b9b9;
     border: 16px solid #b9b9b9;
-    width: 50%;
+    width: 650px;
     display: flex;
     margin: 0 auto;
 }
