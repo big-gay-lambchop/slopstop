@@ -16,12 +16,15 @@
         </h2>
 
         <p class="date" style="text-align: center;">
-            Do a flip and spontaneously combust!
+            ...
         </p>
 
         <p class="post">
-            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/28.png" alt="">
-            <span style="display: block; text-align: center;">How?</span>
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/32.png" alt="">
+            <input class="dialoglogButton" value="Show Dialoglog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Dialoglog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Dialoglog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+                <div style="color: #FF0000;">CALVIN: i will rescue you... brother...</div>
+            </div>
         </p>
 
         <script>
