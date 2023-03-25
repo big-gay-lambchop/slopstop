@@ -16,17 +16,19 @@
         </h2>
 
         <p class="date" style="text-align: center;">
-            Computer, zoom out.
+            Aggress?
         </p>
 
         <p class="post">
-            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/50.png" alt="">
-            <span style="display: block; text-align: center;">
-                On it, boss.
-                <br> <br>
-                Gee... it sure is dark down here.
-            </span>
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/55.png" alt="">
         </p>
+
+        <div class="post">
+            <input class="dialoglogButton" value="Show Dialoglog" onclick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.value = 'Hide Dialoglog';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Show Dialoglog';}" type="button" />
+            <div class="dialoglog" style="display: none;">
+                <div style="color: #7f66da;">gacy: iMMM GONNA FUCkkkKINNNNNNNNNnnnnngH</div>
+            </div>
+        </div>
 
         <script>
             document.onkeydown = function (e) { 
@@ -66,7 +68,7 @@
 
             <input 
                 class="pageButton" 
-                value="Drink from the mystery bottle. >"
+                value=">"
                 style="display: block; margin-left: auto;"
                 onclick="
                     var path = window.location.pathname;
