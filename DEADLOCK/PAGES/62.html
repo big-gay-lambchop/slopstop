@@ -20,7 +20,10 @@
         </p>
 
         <p class="post">
-            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/59.png" alt="">
+            <img style="width: 100%; display: flex; margin: 0 auto; margin-bottom: 16px;" src="IMG/62.png" alt="">
+            <span style="display: block; text-align: center;">
+                ...If only he looked that cool, he's too uncoordinated to move his limbs right, let alone fix himself into looking anywhere close to a smoldering badass.
+            </span>
         </p>
 
         <script>
@@ -37,9 +40,6 @@
                 if (charCode == 37) {
                     location.replace(prev)
                 }
-                else if (charCode == 39) {
-                    location.replace(next)
-                }
             };
         </script>
 
@@ -55,21 +55,6 @@
                     let prev = (parseInt(page) - 1).toString() + '.html';
 
                     location.replace(prev)
-                " 
-                type="button" 
-            />
-
-            <input 
-                class="pageButton" 
-                value="Inspect horrible corpse. >"
-                style="display: block; margin-left: auto;"
-                onclick="
-                    var path = window.location.pathname;
-                    var page = path.split('/').pop();
-                    
-                    let next = (parseInt(page) + 1).toString() + '.html';
-
-                    location.replace(next)
                 " 
                 type="button" 
             />
